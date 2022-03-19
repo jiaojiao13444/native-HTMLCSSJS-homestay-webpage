@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主页</title>
+    <!-- 引入外部css样式用link标签不用style标签 -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- container包括了所有内容 -->
+    <div class="container">
+        <!-- 导航栏 -->
+        <div class="navBox">
+            <div class="navBar">
+                <span class="logo"><img src="img\icon\logo.png"></span>
+                <ul>
+                    <li>
+                        <a href="">登录</a>
+                    </li>
+                    <li>
+                        <a href="">注册</a>
+                    </li>
+                    <li>
+                        <a href="">出租房源</a>
+                    </li>
+                    <li>
+                        <a href="">开展体验</a>
+                    </li>
+                    <li>
+                        <a href="">历史足迹</a>
+                    </li>
+                    <li>
+                        <a href="">手机端</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 轮播图模块 -->
+        <div class="bannerBox">
+            <!-- 图片展示 -->
+            <ul>
+                <li><img src="img\banner\banner01.png" class="img current"></li>
+                <li><img src="img\banner\banner02.png" class="img"></li>
+                <li><img src="img\banner\banner03.png" class="img"></li>
+                <li><img src="img\banner\banner04.png" class="img"></li>
+                <li><img src="img\banner\banner05.png" class="img"></li>
+            </ul>
+            <!-- 小圆点 -->
+            <div class="dots"><span class="dot cur"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+        </div>
+
+        <!-- 搜索框模块 -->
+        <div class="searchBox">
+            <form action="">
+                <input type="text" placeholder="请输入" class="searchVal">
+                <input type="submit" value="">
+            </form>
+        </div>
+
+        <!-- 特惠房源模块 -->
+        <div class="oddsBox">
+            <!-- 标题 -->
+            <div class="title">
+                <span>特惠房源</span>
+                <!-- 要给6加动画效果，所以单独用一个盒子 -->
+                <span>品质房源，低至<i>6</i>折</span>
+            </div>
+            <!-- 城市列表与房源图文 -->
+            <div class="content">
+                <ul class="citylist">
+                    <li class="current">北京</li>
+                    <li>上海</li>
+                    <li>成都</li>
+                    <li>重庆</li>
+                    <li>广州</li>
+                    <li>西安</li>
+                    <li>南京</li>
+                    <li>武汉</li>
+                </ul>
+                <div class="productInfo">
+                    <!-- 一共有8个productBox，对应8个城市，哪个城市被选中对应的productBox就显示，其他的隐藏 -->
+                    <div class="productBox current">
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/beijing1.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/beijing2.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/beijing3.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/beijing4.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/beijing5.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/beijing6.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/shanghai1.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/shanghai2.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/shanghai3.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/shanghai4.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/shanghai5.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/shanghai6.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/chengdu1.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/chengdu2.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/chengdu3.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/chengdu4.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/chengdu5.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/chengdu6.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/chongqing1.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/chongqing2.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/chongqing3.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/chongqing4.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/chongqing5.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/chongqing6.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/guangzhou1.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/guangzhou2.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/guangzhou3.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/guangzhou4.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/guangzhou5.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/guangzhou6.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/xian1.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/xian2.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/xian3.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/xian4.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/xian5.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/xian6.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/nanjing1.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/nanjing2.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/nanjing3.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/nanjing4.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/nanjing5.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/nanjing6.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/wuhan1.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/wuhan2.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/wuhan3.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/wuhan4.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/wuhan5.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                        <div class="infoBox">
+                            <p><img src="img/oddsBox/wuhan6.png"></p>
+                            <span>整套公寓 1张床</span>
+                            <p class="title">壹舍 墨绿轻奢感ins 老城根 邻近地铁一居室</p>
+                            <p class="price">￥142每晚 <s>原价￥158每晚</s></p>
+                            <ul>
+                                <li><img src="img/icon/star.png"></li>
+                                <li>107 超赞房东</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- “你可能也想去”模块 -->
+        <div class="wanttogo">
+            <div class="title">
+                <span>你可能也想去</span>
+                <span>发现更多出行灵感</span>
+            </div>
+            <div class="content">
+                <ul>
+                    <li>
+                        <img src="img/wantgo/wantgo01.png" alt="">
+                        <div class="mask"></div>
+                        <p>卡萨布兰卡<br>均价￥369每晚</p>
+                    </li>
+                    <li>
+                        <img src="img/wantgo/wantgo02.png" alt="">
+                        <div class="mask"></div>
+                        <p>卡萨布兰卡<br>均价￥369每晚</p>
+                    </li>
+                    <li>
+                        <img src="img/wantgo/wantgo03.png" alt="">
+                        <div class="mask"></div>
+                        <p>卡萨布兰卡<br>均价￥369每晚</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 保障模块 -->
+        <div class="ensureBox">
+            <div class="title">
+                <span>客栈保障</span>
+                <span>全方位保障计划</span>
+            </div>
+            <div class="content">
+                <div>
+                    <img src="img/icon/housing.png" alt="">
+                    <p>安心房源保障<br>人工审核所有房源信息，入住更放心</p>
+                </div>
+                <div>
+                    <img src="img/icon/service.png" alt="">
+                    <p>专业客服<br>全方位服务</p>
+                </div>
+                <div>
+                    <img src="img/icon/safety.png" alt="">
+                    <p>旅行安全保障<br>多重风险控制设计，全方位保障您的行程安全</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 友情链接 -->
+        <div class="link">
+            <!-- 自定义列表标签 -->
+            <dl>
+                <dt>关于客栈</dt>
+                <dd>工作机会</dd>
+                <dd>新闻</dd>
+                <dd>政策</dd>
+                <dd>多元化与归属感</dd>
+                <dd>无障碍设施</dd>
+            </dl>
+            <dl>
+                <dt>发现</dt>
+                <dd>旅行基金</dd>
+                <dd>商务差旅</dd>
+                <dd>缤纷体验</dd>
+                <dd>信任与安全</dd>
+                <dd>杂志</dd>
+            </dl>
+            <dl>
+                <dt>出租</dt>
+                <dd>为什么要出租</dd>
+                <dd>待客之道</dd>
+                <dd>房东义务</dd>
+                <dd>开展体验</dd>
+                <dd>open homes</dd>
+            </dl>
+            <dl>
+                <dt>客服支持</dt>
+                <dd>帮助</dd>
+                <dd>投诉</dd>
+            </dl>
+        </div>
+
+        <!-- 版权 -->
+        <div class="copyright">
+            copyright@嚼嚼嚼
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

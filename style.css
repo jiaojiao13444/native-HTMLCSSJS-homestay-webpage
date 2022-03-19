@@ -1,0 +1,368 @@
+    /* 通用样式 */
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    a {
+        /* 去掉链接默认的下划线 */
+        text-decoration: none;
+    }
+    
+    li {
+        /* 去掉无序列表项默认的小圆点 */
+        list-style: none;
+    }
+    
+    input {
+        /* 去掉被选中时出现的轮廓线 */
+        outline: none;
+        /* chrome浏览器中默认有2px的边框,把他去掉 */
+        border: none;
+    }
+    
+    .container {
+        /* 让内容随着浏览器窗口大小改变而改变 */
+        width: 100%;
+    }
+    /* 导航栏模块 */
+    
+    .navBox {
+        width: 100%;
+        height: 40px;
+        background-color: #43F0ED;
+    }
+    
+    .navBar {
+        width: 1050px;
+        /* 定义最小宽度 */
+        min-width: 1000px;
+        /* 让盒子水平居中 */
+        margin: 0 auto;
+    }
+    
+    .navBar .logo {
+        float: left;
+        margin-top: 3px;
+    }
+    
+    .navBar ul {
+        float: right;
+        /* 让盒子垂直居中 */
+        line-height: 40px;
+    }
+    
+    .navBar ul li {
+        float: left;
+    }
+    
+    .navBar ul li a {
+        color: white;
+        /* a原本是行内元素,不能设置宽高,把它转换成行内块元素即可设置宽高 */
+        display: inline-block;
+        height: 40px;
+        padding: 0 10px;
+    }
+    
+    .navBar ul li a:hover {
+        color: #43F0ED;
+        background-color: #fff;
+    }
+    /* 轮播图模块 */
+    
+    .bannerBox {
+        width: 100%;
+        height: 455px;
+        position: relative;
+    }
+    
+    .bannerBox .img {
+        width: 100%;
+        display: none;
+    }
+    
+    .bannerBox .current {
+        display: block;
+    }
+    
+    .bannerBox .dots {
+        position: absolute;
+        width: 150px;
+        height: 30px;
+        bottom: 30px;
+        border-radius: 15px;
+        /* 两句话,让绝对定位的盒子给我水平居中 */
+        left: 50%;
+        margin-left: -75px;
+        /* 设置半透明的背景 */
+        background: rgba(0, 0, 0, 0.1);
+    }
+    
+    .bannerBox .dots .dot {
+        /* 为了设置宽高转换成行内块 */
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border-radius: 10px;
+        margin: 5px;
+        /* 鼠标经过时显示小手 */
+        cursor: pointer;
+    }
+    
+    .bannerBox .dots .cur {
+        background-color: #43F0ED;
+    }
+    /* 搜索框模块 */
+    
+    .searchBox {
+        width: 550px;
+        height: 50px;
+        margin: 0 auto;
+        background-color: white;
+        /* 想让它叠在上一个盒子上面，但是他们之间不是父子关系，所以用相对定位，相对自己原来的位置进行定位 */
+        position: relative;
+        top: -20px;
+        border-radius: 5px;
+        /* 设置盒子阴影 */
+        box-shadow: 0 0 5px gray;
+    }
+    
+    .searchBox form input {
+        float: left;
+        width: 500px;
+        height: 50px;
+        border-radius: 5px;
+        text-indent: 2em;
+    }
+    
+    .searchBox form input[type="submit"] {
+        /* c3新增属性选择器 */
+        float: right;
+        width: 50px;
+        height: 50px;
+        background: url(img/icon/searchicon.png) no-repeat center;
+        /* animation使用动画效果 */
+        /* 使用bounce这个动画效果,一次用0.75s完成,动画效果永不停止,且是正反方向交替的效果 */
+        animation: bounce 0.5s infinite alternate;
+    }
+    /* 上下跳动的动画效果 */
+    
+    @keyframes bounce {
+        /* 开始时在原点 */
+        0% {
+            transform: translate(0, 0);
+        }
+        /* 结束时往上走了8px */
+        100% {
+            transform: translate(0, -5px);
+        }
+    }
+    /* 特惠房源模块 */
+    
+    .oddsBox {
+        width: 1050px;
+        margin: 0 auto;
+    }
+    /* 特惠房源的导航栏模块 */
+    
+    .oddsBox .title span:first-child,
+    .wanttogo .title span:first-child,
+    .ensureBox .title span:first-child {
+        /* c3新增结构伪类选择器 */
+        display: inline-block;
+        padding: 0 15px;
+        height: 30px;
+        background-color: #43F0ED;
+        color: white;
+        font-weight: 1000;
+        /* 设置文字水平垂直居中 */
+        line-height: 30px;
+        text-align: center;
+    }
+    
+    .oddsBox .title span:last-child,
+    .wanttogo .title span:last-child,
+    .ensureBox .title span:last-child {
+        color: #43F0ED;
+        font-weight: 1000;
+    }
+    
+    .oddsBox .title span:last-child i {
+        /* 取消i的斜体 */
+        font-style: normal;
+        padding: 0 5px;
+    }
+    
+    .oddsBox .content {
+        margin-top: 10px;
+    }
+    
+    .oddsBox .content .citylist {
+        /* 使用flex布局 */
+        display: flex;
+        /* 项目排列方式：先两边贴边，再平分剩余空间 */
+        justify-content: space-between;
+    }
+    
+    .oddsBox .content .citylist li {
+        /* 用padding而不直接设置宽度的好处是如果地名很长也不会溢出 */
+        padding: 0 15px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        box-shadow: 0 0 3px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .oddsBox .content .citylist .current {
+        /* 注意current的样式一定要写在下面，否则会因为层叠性不起作用 */
+        background-color: #43F0ED;
+        color: white;
+    }
+    /*城市对应的房源信息 */
+    
+    .oddsBox .content .productInfo .productBox {
+        display: none;
+        width: 1050px;
+        margin: 20px 0;
+        cursor: pointer;
+    }
+    
+    .oddsBox .content .productInfo .current {
+        display: block;
+    }
+    
+    .oddsBox .content .productInfo .productBox .infoBox {
+        width: 334px;
+        float: left;
+        margin-bottom: 20px;
+        margin-right: 24px;
+    }
+    
+    .oddsBox .content .productInfo .productBox .infoBox:nth-child(3n) {
+        /* c3新增结构伪类选择器，括号中可写公式，此处的3n表示3的倍数*/
+        margin-right: 0;
+    }
+    
+    .oddsBox .content .productInfo .productBox .infoBox ul li {
+        float: left;
+        margin-right: 10px;
+        font-size: small;
+    }
+    
+    .oddsBox .content .productInfo .productBox .infoBox p img:hover {
+        /* 鼠标经过时放大图片 */
+        transform: scale(1.2);
+        /* 这个时间是整个变化过程的时间,如果后面还有时间就是延迟开始的时间 */
+        transition: 0.5s;
+    }
+    
+    .oddsBox .content .productInfo .productBox .infoBox .title {
+        font-size: large;
+        margin: 10px 0;
+    }
+    
+    .oddsBox .content .productInfo .productBox .infoBox span {
+        font-size: small;
+    }
+    
+    .oddsBox .content .productInfo .productBox .infoBox .price {
+        margin-bottom: 5px;
+    }
+    
+    .oddsBox .content .productInfo .productBox .infoBox .price s {
+        font-size: small;
+        margin-left: 5px;
+    }
+    /* “你可能也想去”模块 */
+    /* 标题模块和特惠房源模块的标题样式一样，所以在上面一起定义了 */
+    /* 内容模块 */
+    
+    .wanttogo {
+        width: 1050px;
+        margin: 0 auto;
+        /* 触发BFC，清除浮动 */
+        overflow: hidden;
+    }
+    
+    .wanttogo .content ul li {
+        position: relative;
+        float: left;
+        margin-top: 10px;
+        margin-right: 20px;
+        text-align: center;
+    }
+    
+    .wanttogo .content ul li p {
+        position: absolute;
+        top: 140px;
+        right: 40px;
+        color: white;
+    }
+    
+    .wanttogo .content ul li .mask {
+        /* 遮罩层,鼠标未经过时是看不到的,通过绝对定位来覆盖图片 */
+        position: absolute;
+        top: 0;
+        border-radius: 10px;
+        height: 241px;
+        width: 193px;
+    }
+    
+    .wanttogo .content ul li .mask:hover {
+        background: rgba(0, 0, 0, 0.6);
+        transition: 0.5s;
+    }
+    /* 保障模块 */
+    /* 标题模块和特惠房源模块的标题样式一样，所以在上面一起定义了 */
+    
+    .ensureBox {
+        width: 1050px;
+        margin: 0 auto;
+    }
+    
+    .ensureBox .content {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .ensureBox .content div img,
+    .ensureBox .content div p {
+        float: left;
+    }
+    
+    .ensureBox .content div img {
+        margin-right: 10px;
+    }
+    
+    .ensureBox img {
+        animation: bounce 0.5s infinite alternate;
+    }
+    /* 链接模块 */
+    
+    .link {
+        width: 1050px;
+        margin: 20px auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .link dl dt {
+        font-size: large;
+        color: #43F0ED;
+        margin: 10px 0;
+    }
+    
+    .link dl dd {
+        font-size: small;
+        cursor: pointer;
+    }
+    /* 版权 */
+    
+    .copyright {
+        text-align: center;
+    }
